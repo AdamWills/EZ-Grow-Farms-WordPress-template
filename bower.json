@@ -7,9 +7,8 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "foundation-sites": "~6.0.3"
+    "foundation-sites": "~6.0.3",
+    "slick-carousel": "~1.5.8"
   },
-  "overrides": {
-
-  }
+  "overrides": {}
 }
