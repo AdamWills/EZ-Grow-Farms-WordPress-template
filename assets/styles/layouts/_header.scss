@@ -1,0 +1,13 @@
+.top-bar {
+  @include top-bar-container;
+
+  .menu {
+    @include menu-base;
+    display: flex;
+
+    li {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  }
+}
