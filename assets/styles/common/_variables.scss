@@ -1,9 +1,15 @@
-// Glyphicons font path
-$icon-font-path:        "../fonts/";
-
 // Grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:         #27ae60;
+$brand-primary:         #94090e;
+$brand-secondary:       #167f3a;
+$blue:                  #0e1f8b;
+$grey:                  #494546;
+
+$topbar-background:     $brand-primary;
+$anchor-color: $brand-primary;
+
+// Fonts
+$body-font-family: 'Muli', sans-serif;

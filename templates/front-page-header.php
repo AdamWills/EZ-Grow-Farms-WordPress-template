@@ -1,5 +1,7 @@
 <?php use Roots\Sage\Titles; ?>
 
 <div class="page-header">
-  <h1><?= Titles\title(); ?></h1>
+  <div class="content">
+    <h1>EZ Grow</h1>
+  </div>
 </div>

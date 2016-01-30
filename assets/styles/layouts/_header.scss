@@ -1,13 +1,66 @@
+.header-container {
+  @include flex-grid-row;
+  background-color: #fff;
+  @include breakpoint(medium) {
+    padding: 0 ( rem-calc($grid-column-gutter) / 2 );
+  }
+}
+
+.menu-icon {
+  @include hamburger(#fff,#333,20px,16px,2px,3);
+  margin-right: 1rem;
+}
+
+.title-bar {
+  width: 100%;
+  background-color: $brand-primary;
+  color: #fff;
+  padding: 1rem;
+}
+
+.title-bar-title {
+  display: inline-block;
+}
+
 .top-bar {
   @include top-bar-container;
+  width: 100%;
+
+
+  @include breakpoint(medium) {
+    @include flex-grid-column(12);
+  }
 
   .menu {
     @include menu-base;
-    display: flex;
+
+    @include breakpoint(medium) {
+      display: flex;
+    }
 
     li {
-      flex: 1 1 100%;
-      text-align: center;
+
+      display: block;
+
+      @include breakpoint(medium) {
+        flex: 1 1 100%;
+        text-align: center;
+        border-right: 1px solid #fff;
+
+        &:last-of-type {
+          border-right: none;
+        }
+      }
     }
+
+
   }
+
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+
 }

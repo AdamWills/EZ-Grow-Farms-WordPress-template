@@ -19,21 +19,29 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <div class="wrap container" role="document">
-      <div class="content row">
+      <div class="content">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
-        <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
       </div><!-- /.content -->
-    </div><!-- /.wrap -->
-    <?php
+      <?php
       do_action('get_footer');
       get_template_part('templates/footer');
-      wp_footer();
-    ?>
+      ?>
+    </div><!-- /.wrap -->
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Raleway::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
+    <?php wp_footer(); ?>
   </body>
 </html>

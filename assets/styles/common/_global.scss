@@ -1,1 +1,19 @@
+body {
+  background-size: cover;
 
+  // @include breakpoint(small) {
+  //   background-image: url(../images/bg-sm.jpg);
+  // }
+
+  @include breakpoint(medium) {
+    background-image: url(../images/bg-md.jpg);
+  }
+
+  @include breakpoint(large) {
+    background-image: url(../images/bg-lg.jpg)
+  }
+}
+
+.wrap {
+  background-color: #fff;
+}

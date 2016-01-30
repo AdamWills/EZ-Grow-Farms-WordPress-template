@@ -1,9 +1,12 @@
-<div class="top-bar">
-  <ul class="menu" data-dropdown-menu>
-    <li class="has-submenu"><a href="#">One</a></li>
-    <li><a href="#">Two</a></li>
-    <li><a href="#">Three</a></li>
-    <li><a href="#">Four</a></li>
-    <li><a href="#">Five</a></li>
-  </ul>
+<div class="container">
+  <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title"><?php bloginfo('name'); ?></div>
+  </div>
+  <div class="top-bar" id="main-menu">
+    <?php wp_nav_menu( array(
+      'theme_location' => 'primary_navigation',
+      'container'      => ''
+    ) ); ?>
+  </div>
 </div>
