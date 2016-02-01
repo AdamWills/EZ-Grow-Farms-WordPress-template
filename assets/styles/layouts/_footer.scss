@@ -1,23 +1,11 @@
 .content-info {
   background-color: #fff;
-
-  .sitemap {
-    @include flex-grid-column(8);
-  }
-  .ofvga {
-    @include flex-grid-column(4);
-  }
-  .social-media {
-    @include flex-grid-column(12);
-    padding-top: 2rem;
-    padding-bottom: rem-calc($grid-column-gutter) / 2;
-  }
+  border-top: 2px solid $grey;
 
   .row {
-    background-color: $grey;
     margin-left: rem-calc($grid-column-gutter) / 2;
     margin-right: rem-calc($grid-column-gutter) / 2;
-    padding-top: rem-calc($grid-column-gutter) / 2;
+    padding-top: rem-calc($grid-column-gutter);
   }
 
   .row img {

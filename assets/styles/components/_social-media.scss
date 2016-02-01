@@ -1,5 +1,6 @@
 .icons {
   @include menu-base;
+  margin-top: $padding-half;
   li {
   }
   &>li>a {

@@ -13,3 +13,21 @@
   @extend .btn;
   @extend .btn-default;
 }
+
+div.wpcf7-response-output {
+  @include callout-base;
+  padding: $padding-half;
+}
+
+div.wpcf7-validation-errors {
+  @include callout-style($brand-primary);
+  border-color: $brand-primary;
+}
+
+span.wpcf7-not-valid-tip {
+  @include callout-base;
+  @include callout-style($brand-primary);
+  color: #000;
+  padding: $padding-half / 2;
+  margin-top: -1rem;
+}

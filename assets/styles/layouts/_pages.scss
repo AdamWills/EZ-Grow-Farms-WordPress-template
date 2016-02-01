@@ -2,7 +2,6 @@
   img {
     max-width: 100%;
     height: auto;
-    margin-bottom: rem-calc($grid-column-gutter);
   }
 }
 
@@ -20,5 +19,5 @@
     align-items: center;
 
   }
-  margin-bottom: rem-calc($grid-column-gutter);
+  margin-bottom: $padding-half;
 }

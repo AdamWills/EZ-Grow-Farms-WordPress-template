@@ -17,6 +17,8 @@
 .alignright {
   // margin-bottom: ($line-height-computed / 2);
   height: auto;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 @include breakpoint(medium) {
   // Only float if not on an extra small device

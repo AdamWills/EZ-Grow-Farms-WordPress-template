@@ -1,3 +1,7 @@
+$padding-full: rem-calc($grid-column-gutter);
+$padding-half: rem-calc($grid-column-gutter) / 2;
+
+
 body {
   background-size: cover;
 
@@ -16,4 +20,11 @@ body {
 
 .wrap {
   background-color: #fff;
+}
+.main {
+  padding-top: $padding-half;
+}
+
+address {
+  font-style: normal;
 }

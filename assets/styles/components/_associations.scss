@@ -1,0 +1,23 @@
+.row-associations {
+  border-top: 2px solid $grey;
+  padding-top: rem-calc($grid-column-gutter);
+  padding-bottom: rem-calc($grid-column-gutter);
+  margin-top: rem-calc($grid-column-gutter);
+  .associations {
+    display: flex;
+    text-align: center;
+    margin-top: rem-calc($grid-column-gutter);
+
+    img {
+      filter: grayscale(100%);
+      transition: all 0.5s ease-in-out;
+      padding-left:rem-calc($grid-column-gutter)/2;
+      padding-right: rem-calc($grid-column-gutter)/2;
+      width: 100%;
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
+}

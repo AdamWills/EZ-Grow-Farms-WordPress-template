@@ -19,9 +19,7 @@
     'common': {
       init: function() {
         $(document).foundation();
-        $('.menu-icon').on('click', function(e) {
-          console.log('clicked');
-        });
+        var elem = new Foundation.Dropdown($('ul.dropdown'));
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

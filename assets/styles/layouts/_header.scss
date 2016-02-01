@@ -25,13 +25,15 @@
 .top-bar {
   @include top-bar-container;
   width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
 
 
   @include breakpoint(medium) {
     @include flex-grid-column(12);
   }
 
-  .menu {
+  & > .menu {
     @include menu-base;
 
     @include breakpoint(medium) {
@@ -39,8 +41,8 @@
     }
 
     li {
-
       display: block;
+      position: relative;
 
       @include breakpoint(medium) {
         flex: 1 1 100%;
@@ -53,14 +55,38 @@
       }
     }
 
+    .nested.menu {
 
+      @include breakpoint(medium) {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+      }
+
+      li {
+        border-right: 0;
+        border-top: 1px solid #fff;
+      }
+
+
+      a {
+        padding: 0.5rem 1rem;
+        display: inline-block;
+      }
+    }
   }
 
   a {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
+    display: inline-block;
   }
 
-
+  &>.menu>li:not(.menu-text)>a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
